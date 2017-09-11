@@ -49,7 +49,8 @@ PyFileIteratorUsn_Iter_iternext(PyObject * self)
   }
 }
 
-void PyFileIteratorUsn_Iter_destructor(PyObject * self)
+void 
+PyFileIteratorUsn_Iter_destructor(PyObject * self)
 {
   /* use AppVerify to detect memory leak */
   PyFileIteratorUsn_Iter * p = (PyFileIteratorUsn_Iter*)self;
